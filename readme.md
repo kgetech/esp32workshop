@@ -38,7 +38,7 @@ Let's start with our:
 3. Install the Arduino IDE (https://docs.arduino.cc/software/ide/).
 4. Navigate to "Tools" > "Board" > "Boards Manager".
 5. Search for "esp32 by Espressif Systems".
-6. Select version 20.0.17, and install (you may select a newer version, or for a different ESP32 board, but I cannot guarantee that the workshop's code will work correctly).
+6. Select version 2.0.17, and install (you may select a newer version, or for a different ESP32 board, but I cannot guarantee that the workshop's code will work correctly).
 7. Navigate to "Tools" > "Manage Libraries".
 8. Install version 1.1.5 (again, you may select a newer version if one exists, but I cannot guarantee that the workshop's code will work).
 9. Plug in your ESP32 via USB-C (or other cable).
