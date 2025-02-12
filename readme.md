@@ -48,7 +48,7 @@ Let's start with our:
 #### Working with the display
 The first thing you will notice is that at the top we have used an #include preprocessor directive. This basically tells the compiler to "copy everything in the file that has been included at the top of this code." It's a little more complicated, but that's the general idea. This allows us to use features of the lcdgfx library.
 
-Now read through the rest of the comments, and get a feel for what the code intends to do. If you have any questions, feel free to ask!
+Now read through the rest of the code comments (all the text in the .ino files after `//`, and get a feel for what the code intends to do. If you have any questions, feel free to ask!
 
 Next, plug-in the LCD display to the breadboard , making sure that each pin lines up with a different numbered row, and leave enough space on the column that you can plug in at-least one dupont jumper wire in the same rows as your display's pins. 
 
@@ -69,9 +69,9 @@ Now, you can go down to line 24, and edit the message inside the parentheses, an
 After you've had a chance to play around a little, open the file "workshop_01/esp32_cardRead/esp32_cardRead.ino", and close the previous Arduino IDE window. You may need to "Select Board" again, but the rest of the set-up will remain installed. 
 
 
-Note the values for the pins that are specified in the #define preprocessor directive (the define preprocessor directive basically copies whatever is placed after the first keyword in place of wherever that keyword is used later on. It's common practice to use ALL_CAPS, and these are referred to as "macros", and yes, they can do a whole lot more than store number values--but more on that in another workshop. For now, just know that these represent our SPI data pins.
+Note the values for the pins that are specified in the `#define` preprocessor directive. The `#define` preprocessor directive basically copies whatever is placed after the first keyword in place of wherever that keyword is used later on. It's common practice to use ALL_CAPS, and these are referred to as "macros", and yes, they can do a whole lot more than store number values--but more on that in another workshop. For now, just know that these represent our SPI data pins.
 
-Similar to the LCD display, place the SD Card Adapter into the breadboard, and connect the GND and Power pins to GND and 5V, just like the display.
+Similar to the LCD display, place the SD Card Adapter into the breadboard, and connect the GND and Power (VCC) pins to GND and 5V, just like the display.
 Next, use the macro definitions to figure out where the other pins should connect (hint: MOSI stands for Master-Out Slave-In, and MISO stands for Master-In Slave-Out, so MOSI on the adapter should not be connected to the MOSI pin on the microcontroller, feel free to ask if you're still lost).
 
 Now, as before, read through the rest of the code comments, and try to understand the code. If you have any questions, feel free to ask, there's a lot here.
