@@ -40,7 +40,7 @@ Let's start with our:
 5. Search for "esp32 by Espressif Systems".
 6. Select version 2.0.17, and install (you may select a newer version, or for a different ESP32 board, but I cannot guarantee that the workshop's code will work correctly).
 7. Navigate to "Tools" > "Manage Libraries".
-8. Install version lcdgfx 1.1.5 (again, you may select a newer version if one exists, but I cannot guarantee that the workshop's code will work).
+8. Install lcdgfx version 1.1.5 (again, you may select a newer version if one exists, but I cannot guarantee that the workshop's code will work).
 9. Plug in your ESP32 via USB-C (or other cable).
 10. Click on the "Select Board" drop-down menu, and click on the "Unknown Board", select "DOIT ESP32 DevKit 1" (or whatever board you installed).
 11. Check in the bottom right hand corner of the window, and ensure it says "DOIT ESP32 DEVKIT V1 on COM[n]" (Where [n] represents a number specified arbitrarily by your operating system).
