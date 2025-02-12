@@ -48,7 +48,7 @@ Let's start with our:
 #### Working with the display
 The first thing you will notice is that at the top we have used an #include preprocessor directive. This basically tells the compiler to "copy everything in the file that has been included at the top of this code." It's a little more complicated, but that's the general idea. This allows us to use features of the lcdgfx library.
 
-Now read through the rest of the code comments (all the text in the .ino files after `//`, and get a feel for what the code intends to do. If you have any questions, feel free to ask!
+Now read through the rest of the code comments (all the text in the .ino files after `//`), and get a feel for what the code intends to do. If you have any questions, feel free to ask!
 
 Next, plug-in the LCD display to the breadboard , making sure that each pin lines up with a different numbered row, and leave enough space on the column that you can plug in at-least one dupont jumper wire in the same rows as your display's pins. 
 
