@@ -46,7 +46,7 @@ Let's start with our:
 11. Check in the bottom right hand corner of the window, and ensure it says "DOIT ESP32 DEVKIT V1 on COM[n]" (Where [n] represents a number specified arbitrarily by your operating system).
 12. Select "File" > "Open" and navigate to the directory where you cloned the repository for this workshop, and open "workshop_01/esp32_i2cDisplay/esp32_i2cDisplay.ino".
 #### Working with the display
-The first thing you will notice is that at the top we have used an #include preprocessor directive. This basically tells the compiler to "copy everything in the directory that has been included at the top of this code." It's a little more complicated, but that's the general idea. This allows us to use features of the lcdgfx library.
+The first thing you will notice is that at the top we have used an #include preprocessor directive. This basically tells the compiler to "copy everything in the file that has been included at the top of this code." It's a little more complicated, but that's the general idea. This allows us to use features of the lcdgfx library.
 
 Now read through the rest of the comments, and get a feel for what the code intends to do. If you have any questions, feel free to ask!
 
