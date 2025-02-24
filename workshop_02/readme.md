@@ -28,4 +28,23 @@ Yes, the primary purpose of Binary is actually to represent a number value:
 * 101<sub>2</sub> 5<sub>10</sub> 
 * 001<sub>2</sub> 1<sub>10</sub> 
 * 110<sub>2</sub> 6<sub>10</sub> 
-* 111<sub>2</sub> 7<sub>10</sub> 
+* 111<sub>2</sub> 7<sub>10</sub>
+
+Okay, that's fancy, what's whith the weird subscripts? The subscripts mean that the number **X<sub>n</sub>** is the value **X** displayed in "base n", confusing right? So, let's go back to normal **decimal** numbers, "deci" meaning "ten", is a *base ten* number system. That means that there's ten unique characters that are *indexed* (meaning listed, in-order) as 0, 1, 2, 3, 4, 5, 6, 7, 8, and 9, and when you get to 9, you rotate the first *digit* back to 0 and *carry* a 1 into the "tens" place. Again, after you count up to 99 you roll both digits back to 0, and carry a 1 into the hundreds place. This continues into thousands, tens of thousands, hundreds of thousands, and so on. In fact, each of these new "digits" is represented by 10 to the power of n, with n being the position away from the "ones" digit.
+
+So, to get a number abcd<sub>10</sub>, we would add 
+d x 1 + c x 10 + b x 100 a x 1000
+
+***Or if you wanted to get really mathy (that's "fancy and math", a 10 for 01 special):***
+abcd<sub>10</sub> = d x 10<sup>0</sup> + c x 10<sup>1</sup> + b x 10<sup>2</sup> + a x 10<sup>3</sup>
+*Remember: any nonzero number to the power of 0 is equal to 1.*
+
+Let's try this out:
+4263<sub>10</sub> = 
+3 x 10<sup>0</sup> =    3  
+6 x 10<sup>1</sup> =   60  
+2 x 10<sup>2</sup> =  200 
+4 x 10<sup>3</sup> = 4000 
+-------------------------
+                     4263
+
