@@ -246,7 +246,7 @@ Now say that the motor is on, the door is unlocked, the radio is on, and the win
 
 Using these two logical operators allows you to "mask" which values are changed by placing 1 in the bit positions you wish to change, and then applying those masks to the flag value with the appropriate operator. 
 
-***How would you toggle multiple specific bits?"
+***How would you toggle multiple specific bits?***
 
 <details> 
         <summary>ANSWER</summary> 
