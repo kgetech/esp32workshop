@@ -160,3 +160,53 @@ Sidenote: this is called a "Truth Table" which is a table of all possible inputs
 
 Example:
 0b1001 & 0b0101 = 0b0001
+
+###### Bitwise OR
+Bitwise OR is more simple: OR returns "true" if any input arguments are true. So, in the context of bitwise AND and two four bit numbers, bit 0 output = 1 if bit 0 of input 1 or bit 0 of input 2 is equal to 1.
+
+|A|B|Y = A \| B|
+|-|-|:-|
+|0|0|0|
+|0|1|1|
+|1|0|1|
+|1|1|1|
+
+Example:
+0b1001 | 0b0101 = 0b1101
+
+###### Bitwise XOR
+Bitwise XOR actually represents "Exclusive OR" which returns "true" if only one of the input arguments are true. This is easiest to explain in a Truth Table:
+
+|A|B|Y = A ^ B|
+|-|-|:-|
+|0|0|0|
+|0|1|1|
+|1|0|1|
+|1|1|0|
+
+Example:
+0b1001 ^ 0b0101 = 0b1100
+
+###### EXTRA WEIRDNESS
+Compare the truth table for arithmetic plus to bitwise XOR:
+
+|A|B|Y = A + B|
+|-|-|-:|:-|
+|||Carry|Sum|
+|0|0|0|0|
+|0|1|0|1|
+|1|0|0|1|
+|1|1|1|0|
+
+|A|B|Y = A ^ B|
+|-|-|:-|
+|0|0|0|
+|0|1|1|
+|1|0|1|
+|1|1|0|
+
+*The "sum" of A+B is equal to X^B. 
+**If you wanted to generate the carry bit, what logical expression would you use?***
+
+
+
