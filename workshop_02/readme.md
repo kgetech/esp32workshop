@@ -102,7 +102,7 @@ Why does this matter? Well, in the microcontroller's architecture, we typically 
 
 So, why signed and unsigned, why not just use signed for everything? Well, if you can only fit 8 bits into memory, and one of those bits marks the sign (positive or negative), then you only have 7 bits left to describe the numeric value. That cuts the size of the number you can describe ***in half***. 
 
-So, what's the biggest number you can store in 8 bits anyway? Well, we could go an add up each 2<sup>n</n> position, but the easiest way is to take ***2<sup>n</sup> - 1***. So,  if 2<sup>8</sup> is 256, then the maximum value that an 8 bit number can carry is 255--and that is useful for a lot of things, but 2<sup>7</sup> is only 128, meaning a signed 8 bit number can only carry values from -128 to 127 (-128, because negative numbers are typically represented in reverse order, starting with the lowest value at 10000000 ascending to 11111111 (-1<sub>10</sub>), before rolling back to 0, because 0 does not need to be included twice, as -0 is equal to + 0. 
+So, what's the biggest number you can store in 8 bits anyway? Well, we could go an add up each 2<sup>n</sup> position, but the easiest way is to take ***2<sup>n</sup> - 1***. So,  if 2<sup>8</sup> is 256, then the maximum value that an 8 bit number can carry is 255--and that is useful for a lot of things, but 2<sup>7</sup> is only 128, meaning a signed 8 bit number can only carry values from -128 to 127 (-128, because negative numbers are typically represented in reverse order, starting with the lowest value at 10000000 ascending to 11111111 (-1<sub>10</sub>), before rolling back to 0, because 0 does not need to be included twice, as -0 is equal to + 0. 
 
 #### Let's talk logic!
 
