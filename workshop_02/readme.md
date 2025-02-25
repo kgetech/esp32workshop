@@ -28,10 +28,10 @@ _**...and that's basically it**_
 So, obviously, 1 and 0 are numbers, and when you have numbers, that means we can count right?
 
 Yes, the primary purpose of Binary is actually to represent a number value:
-* 101<sub>2</sub> 5<sub>10</sub> 
-* 001<sub>2</sub> 1<sub>10</sub> 
-* 110<sub>2</sub> 6<sub>10</sub> 
-* 111<sub>2</sub> 7<sub>10</sub>
+* 101<sub>2</sub> = 5<sub>10</sub> 
+* 001<sub>2</sub> = 1<sub>10</sub> 
+* 110<sub>2</sub> = 6<sub>10</sub> 
+* 111<sub>2</sub> = 7<sub>10</sub>
 
 Okay, that's fancy, what's whith the weird subscripts? The subscripts mean that the number **X<sub>n</sub>** is the value **X** displayed in "base n", confusing right? So, let's go back to normal **decimal** numbers, "deci" meaning "ten", is a *base ten* number system. That means that there's ten unique characters that are *indexed* (meaning listed, in-order) as 0, 1, 2, 3, 4, 5, 6, 7, 8, and 9, and when you get to 9, you rotate the first *digit* back to 0 and *carry* a 1 into the "tens" place. Again, after you count up to 99 you roll both digits back to 0, and carry a 1 into the hundreds place. This continues into thousands, tens of thousands, hundreds of thousands, and so on. In fact, each of these new "digits" is represented by 10 to the power of n, with n being the position away from the "ones" digit.
 
