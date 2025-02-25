@@ -138,6 +138,7 @@ Similarly, there are logical operators we'll be using those specified in the [Ar
 |\|        | bitwise OR      |
 |^        | bitwise XOR |
 
+
 There are several other operators, but for now, we'll focus on these. The term "bitwise" means that the operator is assgned by bit. So, for our 4 bit binary number, a bitwise operator will compare bit 0 of one number with bit 0 of another number, similarly bit 1 with bit 1, and so on to bit n for an n-bit word size. 
 
 ###### Bitwise NOT
@@ -208,5 +209,24 @@ Compare the truth table for arithmetic plus to bitwise XOR:
 *The "sum" of A+B is equal to X^B. 
 **If you wanted to generate the carry bit, what logical expression would you use?***
 
+<details> 
+        <summary>ANSWER</summary> 
+         Bitwise AND 
+ </details> 
+
+***MIND: BLOWN Again*** or, at least mine was. I mean, this is pretty awesome, because subtraction is just `a + ~b + 1`, multiplication is just `a + a + a +....+`, and division is just *recursive subtraction operations*. Try it out, if you don't believe me, by the way the inverse of a binary number is called the "ones complement", and if you add 1 to the ones complement, you get "twos complement", which converts a positive binary number to a negative binary number. 
+
+###### One more weird thing: Masking
+
+When storing information, it's common to use "flags" which are just single-bit true/false values. But there's not reason that you need to store one flag in a whole memory space, it's quite a poor use of memory--and slows down data retrieving and other fun features of a microcontroller. So we typically *pack* multiple flags into a single memory space. Keeping with our 4 bit word size from before, it contains four flags.
+
+Now, say we initialized these all to 0b0000 (initializing meaning "to set the initial value", typically the best practice is to write everything to a known value or to zero). 
+
+Now, let's say that we break these down as follows
+
+|Value|Bit 3| Bit 2| Bit 1 | Bit 0| 
+|-:|-----|-----|-----|-----|
+|0| Motor Off| Door Locked| Radio Off| Windows Up|
+|1| Motor On| Door Unlocked| Radio On| Windows Down| 
 
 
