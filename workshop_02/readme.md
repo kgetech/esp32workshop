@@ -89,7 +89,7 @@ If anyone ever gives you a binary number like
 |1 x 2<sup>-2</sup> |    (1/4)<sub>10</sub> |0.25|
 |0 x 2<sup>-3</sup> |    0<sub>10</sub>|0.0|
 |1 x 2<sup>-4</sup> |    (1/16)<sub>10</sub>|0.0625|
-| | 0.8125<sub>10</sub>||
+| | | 0.8125<sub>10</sub>|
 
 Of course, speaking of ***Negative Numbers*** binary also has a feature for this.
 
@@ -126,3 +126,37 @@ You're probably familiar with a lot of operators already!
 |-        | r = a minus b      |
 |*        | r = a times b      |
 |/        | r = a divided by b |
+
+These are all *arithmetic* operators, they do math, it works--***cool!***
+
+Similarly, there are logical operators we'll be using those specified in the [Arduino Reference Documentation](https://docs.arduino.cc/language-reference/#structure):
+
+| Operator| Operation          |
+|--------:|:-------------------|
+|~       | bitwise NOT     |
+|&        | bitwise AND      |
+|\|        | bitwise OR      |
+|^        | bitwise XOR |
+
+There are several other operators, but for now, we'll focus on these. The term "bitwise" means that the operator is assgned by bit. So, for our 4 bit binary number, a bitwise operator will compare bit 0 of one number with bit 0 of another number, similarly bit 1 with bit 1, and so on to bit n for an n-bit word size. 
+
+###### Bitwise NOT
+Also referred to as an "inversion" operator, if `~` is applied to a value of `0b0` the value becomes `0b1`, and similarly, if ~ is applied to `0b1` the value becomes `0b0`. Pretty simple: you're just turning over a coin, heads to tails.
+
+Example:
+~0b1011 = 0b0100
+
+###### Bitwise AND
+Bitwise AND is a little more complicated, basically AND returns "true" if all input arguments are true. So, in the context of bitwise AND and two four bit numbers, bit 0 output = 1 only if bit 0 of input 1 and bit 0 of input 2 is equal to 1.
+
+|A|B|Y = A & B|
+|-|-|:-|
+|0|0|0|
+|0|1|0|
+|1|0|0|
+|1|1|1|
+
+Sidenote: this is called a "Truth Table" which is a table of all possible inputs and outputs to a logic expression.
+
+Example:
+0b1001 & 0b0101 = 0b0001
