@@ -229,4 +229,29 @@ Now, let's say that we break these down as follows
 |0| Motor Off| Door Locked| Radio Off| Windows Up|
 |1| Motor On| Door Unlocked| Radio On| Windows Down| 
 
+So, let's say we wanted to turn on the motor, but leave the rest of the values as they were:
+You would want to perform the operation:
+
+0b0000 | 0b1000 = 0b10000
+
+To turn off the motor without adjusting other values you would want to do the following:
+
+0b1000 ^ 0b1000 = 0b0000
+
+You can also do this with multiple values simultaneously, for example, to turn on the motor and unlock the door:
+ 0b0000 | 0b1100 = 0b1100
+Now say that the motor is on, the door is unlocked, the radio is on, and the windows are down, let's close the windows and lock the door:
+
+0b1111^0b0101 = 0b1010
+
+Using these two logical operators allows you to "mask" which values are changed by placing 1 in the bit positions you wish to change, and then applying those masks to the flag value with the appropriate operator. 
+
+***How would you toggle multiple specific bits?"
+
+<details> 
+        <summary>ANSWER</summary> 
+         XOR can also be used to toggle a bit with a bit mask because 0^1 = 1 and 1^1 = 0.
+         
+         You could try to apply a NAND, which is NOT(A AND B), but it wouldn't work because while ~(0 & 1) = 1 and ~(1 & 1) = 0, if you evaluate ~(0 & 0) you will also get 1, which is why masking only works with these two bitwise logical operators. 
+ </details> 
 
