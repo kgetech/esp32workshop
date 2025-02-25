@@ -191,7 +191,7 @@ Example:
 ###### EXTRA WEIRDNESS
 Compare the truth table for arithmetic plus to bitwise XOR:
 
-|A|B|Y = A + B|
+|A|B|Y = A + B||
 |-|-|-:|:-|
 |||Carry|Sum|
 |0|0|0|0|
